@@ -1,9 +1,10 @@
-$(function () {
+document.querySelector(function () {
 
-    if (!$('.envelope').hasClass('open')) {
-        $('.envelope').click(function () {
-            $(this).removeClass('new').addClass('open');
+    if (!document.querySelector('.envelope').classList.contains('open')) {
+        document.querySelector('.envelope').click(function () {
+            document.querySelector(this).classList.remove('new').classList.add('open');
         });
     }
 
 });
+
